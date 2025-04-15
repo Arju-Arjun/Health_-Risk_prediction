@@ -1,0 +1,196 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: url("background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Background Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1); /* Adjusted from 0.6 to 0.1 for lighter overlay */
+    z-index: -1; /* Ensure it stays behind content */
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 0.5s ease-out forwards;
+    text-align: center;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Form Styling (for other pages, e.g., home.html) */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0px 0px 0px rgba(102, 172, 125, 0.1);
+}
+
+/* Labels (for form pages) */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Input & Select Fields (for form pages) */
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button (for form pages) */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Result Box (for other pages) */
+.box {
+    width: 300px;
+    padding: 20px;
+    border: 0.5px solid black;
+    margin: 20px auto;
+    text-align: center;
+    background-color: lightblue;
+}
+
+.box a {
+    text-decoration: none;
+    font-size: 18px;
+    color: darkblue;
+    font-weight: bold;
+}
+
+/* Highlighted Text (for other pages) */
+.highlight {
+    font-weight: bold;
+    color: #d9534f;
+}
+
+/* Titles */
+h2 {
+    font-size: 2em;
+    color: #28a745; /* Green color, consistent with new CSS */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    margin: 20px 0;
+    color: #000; /* Changed from #ff0d0d (red) to #000 (black) to match your image */
+}
+
+/* Paragraphs */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left; /* Changed from justify to left to match your image */
+    color: #333; /* Updated from #555 to #333 for consistency */
+    margin-bottom: 10px;
+}
+
+/* Recommendation Text */
+.recommendation {
+    font-size: 1em;
+    color: #333;
+    text-align: left;
+}
+
+/* Back Button */
+.back-button {
+    display: block;
+    width: 100px;
+    margin: 20px auto;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+/* Optional Section - Initially Hidden (for other pages) */
+#hip-section {
+    display: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    p, .recommendation {
+        font-size: 0.95em;
+    }
+
+    .back-button {
+        width: 80px;
+        padding: 8px;
+        font-size: 0.9em;
+    }
+}
