@@ -118,7 +118,7 @@ MIT License. Feel free to use and modify.
 - [Google Gemini API](https://ai.google.dev/)
 - [Flask](https://flask.palletsprojects.com/)
 - [scikit-learn](https://scikit-learn.org/)
-- [XGBoost](https://xgboost.readthedocs.io/)
+- RandomForest
 
 ---
 
